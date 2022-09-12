@@ -1,0 +1,20 @@
+﻿<Window x:Class="ACT_0_XAML6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ACT_0_XAML6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox>
+            <ListBoxItem Foreground="#00FF00">Shostakovich's String Quartet No. 15 in E-flat minor, Op. 144</ListBoxItem>
+            <ListBoxItem Foreground="#FFAA00">Shostakovich's String Quartet No. 7 in F-sharp minor, Op. 108</ListBoxItem>
+            <ListBoxItem Foreground="#FFFF00">Prokofiev's Violin Sonata No. 1 in F minor, Op. 80</ListBoxItem>
+            <ListBoxItem Foreground="#0000FF">Bartok's String Quartet No. 3, Sz.85, BB.93</ListBoxItem>
+            <ListBoxItem Foreground="#FF0000">Shostakovich's Symphony No. 14 in G minor, Op. 135</ListBoxItem>
+            <ListBoxItem Foreground="#ABCDEF">Shostakovich's String Quartet No. 8 in C minor, Op. 110</ListBoxItem>
+            <ListBoxItem Foreground="#123456">Hindemtith's Cello Sonata, Op.25 No.3</ListBoxItem>
+        </ListBox>
+    </Grid>
+</Window>

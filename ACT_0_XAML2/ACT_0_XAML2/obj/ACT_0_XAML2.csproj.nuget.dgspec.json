@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "H:\\EXERCICES GIT\\UAA14_WPF_XAML\\ACT_0_XAML2\\ACT_0_XAML2\\ACT_0_XAML2.csproj": {}
+    "C:\\Users\\gabta\\Desktop\\UAA14_WPF_XAML\\ACT_0_XAML2\\ACT_0_XAML2\\ACT_0_XAML2.csproj": {}
   },
   "projects": {
-    "H:\\EXERCICES GIT\\UAA14_WPF_XAML\\ACT_0_XAML2\\ACT_0_XAML2\\ACT_0_XAML2.csproj": {
+    "C:\\Users\\gabta\\Desktop\\UAA14_WPF_XAML\\ACT_0_XAML2\\ACT_0_XAML2\\ACT_0_XAML2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\EXERCICES GIT\\UAA14_WPF_XAML\\ACT_0_XAML2\\ACT_0_XAML2\\ACT_0_XAML2.csproj",
+        "projectUniqueName": "C:\\Users\\gabta\\Desktop\\UAA14_WPF_XAML\\ACT_0_XAML2\\ACT_0_XAML2\\ACT_0_XAML2.csproj",
         "projectName": "ACT_0_XAML2",
-        "projectPath": "H:\\EXERCICES GIT\\UAA14_WPF_XAML\\ACT_0_XAML2\\ACT_0_XAML2\\ACT_0_XAML2.csproj",
-        "packagesPath": "C:\\Users\\200198.asty-moulin\\.nuget\\packages\\",
-        "outputPath": "H:\\EXERCICES GIT\\UAA14_WPF_XAML\\ACT_0_XAML2\\ACT_0_XAML2\\obj\\",
+        "projectPath": "C:\\Users\\gabta\\Desktop\\UAA14_WPF_XAML\\ACT_0_XAML2\\ACT_0_XAML2\\ACT_0_XAML2.csproj",
+        "packagesPath": "C:\\Users\\gabta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabta\\Desktop\\UAA14_WPF_XAML\\ACT_0_XAML2\\ACT_0_XAML2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\200198.asty-moulin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }
