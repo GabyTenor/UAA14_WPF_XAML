@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ACT_1_WPF2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="300">
+        Title="MainWindow" Height="500" Width="300" Background="Gray">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -21,8 +21,85 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="1">
-            
-        </StackPanel>
+
+        <!-- Ligne numéro 1-->
+
+        <Button Grid.Column="3" Grid.Row="0" Background="Red" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">C</Bold>
+        </Button>
+
+        <TextBlock Width="210" Height="80" Grid.ColumnSpan="3" Background="White" ></TextBlock>
+
+        <!-- Ligne numéro 2-->
+
+        <Button Grid.Column="0" Grid.Row="1" Background="DarkCyan" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">1</Bold>
+        </Button>
+
+        <Button  Grid.Column="1" Grid.Row="1" Background="DarkCyan" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">2</Bold>
+        </Button>
+
+        <Button  Grid.Column="2" Grid.Row="1" Background="DarkCyan" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">3</Bold>
+        </Button>
+
+        <Button  Grid.Column="4" Grid.Row="1" Background="Green" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">+</Bold>
+        </Button>
+
+        <!-- Ligne numéro 3-->
+
+        <Button Grid.Column="0" Grid.Row="2" Background="DarkCyan" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">4</Bold>
+        </Button>
+
+        <Button  Grid.Column="1" Grid.Row="2" Background="DarkCyan" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">5</Bold>
+        </Button>
+
+        <Button  Grid.Column="2" Grid.Row="2" Background="DarkCyan" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">6</Bold>
+        </Button>
+
+        <Button  Grid.Column="4" Grid.Row="2" Background="Green" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">-</Bold>
+        </Button>
+
+        <!-- Ligne numéro 4-->
+
+        <Button Grid.Column="0" Grid.Row="3" Background="DarkCyan" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">7</Bold>
+        </Button>
+
+        <Button  Grid.Column="1" Grid.Row="3" Background="DarkCyan" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">8</Bold>
+        </Button>
+
+        <Button  Grid.Column="2" Grid.Row="3" Background="DarkCyan" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">9</Bold>
+        </Button>
+
+        <Button  Grid.Column="4" Grid.Row="3" Background="Green" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">/</Bold>
+        </Button>
+
+        <!-- Ligne numéro 5-->
+    
+        <Button Grid.Column="0" Grid.Row="4" Background="Cyan" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">,</Bold>
+        </Button>
+
+        <Button  Grid.Column="1" Grid.Row="4" Background="DarkCyan" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">0</Bold>
+        </Button>
+
+        <Button  Grid.Column="2" Grid.Row="4" Background="Green" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">*</Bold>
+        </Button>
+
+        <Button  Grid.Column="4" Grid.Row="4" Background="Gold" Width="60" Height="60" VerticalAlignment="Center">
+            <Bold FontSize="40">=</Bold>
+        </Button>
     </Grid>
 </Window>
