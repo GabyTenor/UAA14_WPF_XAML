@@ -1,0 +1,87 @@
+﻿<Window x:Class="ACT_3bis_Les_Chalets.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ACT_3bis_Les_Chalets"
+        mc:Ignorable="d"
+        Background="Red"
+        Foreground="White"
+        FontSize="12"
+        Title="MainWindow" Height="225" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <GroupBox>
+            <GroupBox.Header>TYPE DE LOGEMENT</GroupBox.Header>
+            
+            <WrapPanel Orientation="Vertical">
+                <RadioButton Foreground="White">CHALET</RadioButton>
+                <RadioButton Foreground="White">TENTE</RadioButton>
+            </WrapPanel>
+            
+        </GroupBox>
+
+        <GroupBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <GroupBox.Header>CARACTERISTIQUES DU SEJOUR</GroupBox.Header>
+            <StackPanel Orientation="Vertical">
+
+                <WrapPanel Orientation="Horizontal">
+                    <Label Foreground="White">Nbre de Personnes (entre 1 et 6):</Label>
+                    <TextBox x:Name="nbrPersInput" Width="30"></TextBox>
+                    <TextBlock x:Name="messageEntier"></TextBlock>
+                </WrapPanel>
+
+                <WrapPanel>
+                    <Label Foreground="White">Date d'arrivée :</Label>
+                    <TextBox Width="100" Text="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}"></TextBox>
+                </WrapPanel>
+
+                <WrapPanel>
+                    <Label Foreground="White">Date de sortie :</Label>
+                    <TextBox Width="100" Text="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}"></TextBox>
+                </WrapPanel>
+
+                <WrapPanel>
+                    <Button>DUREE SORTIE</Button>
+                    <TextBlock Width="40"></TextBlock>
+                    <Label Content="durée en semaine" Foreground="White"/>
+                </WrapPanel>
+
+            </StackPanel>
+        </GroupBox>
+
+        <CheckBox Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"> RESERVATION</CheckBox>
+
+        <GroupBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+            <GroupBox.Header>RESULTATS</GroupBox.Header>
+            <StackPanel>
+
+                <WrapPanel Orientation="Horizontal">
+                    <Label Foreground="White">Prix à Payer :</Label>
+                    <TextBlock></TextBlock>
+                </WrapPanel>
+
+                <WrapPanel Orientation="Horizontal">
+                    <Label Foreground="White">Nombre de semaines :</Label>
+                    <TextBlock></TextBlock>
+                </WrapPanel>
+
+            </StackPanel>
+        </GroupBox>
+
+        <WrapPanel Orientation="Vertical" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="CALCULER"></Button>
+            <Button Content="INIT"></Button>
+        </WrapPanel>
+    </Grid>
+</Window>
