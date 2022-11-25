@@ -25,8 +25,8 @@
             <GroupBox.Header>TYPE DE LOGEMENT</GroupBox.Header>
             
             <WrapPanel Orientation="Vertical">
-                <RadioButton Foreground="White">CHALET</RadioButton>
-                <RadioButton Foreground="White">TENTE</RadioButton>
+                <RadioButton x:Name="chalet" Foreground="White">CHALET</RadioButton>
+                <RadioButton x:Name="TENTE" Foreground="White">TENTE</RadioButton>
             </WrapPanel>
             
         </GroupBox>
@@ -43,17 +43,17 @@
 
                 <WrapPanel>
                     <Label Foreground="White">Date d'arrivée :</Label>
-                    <TextBox Width="100" Text="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}"></TextBox>
+                    <TextBox x:Name="beginVisit" Width="100" Text="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}"></TextBox>
                 </WrapPanel>
 
                 <WrapPanel>
                     <Label Foreground="White">Date de sortie :</Label>
-                    <TextBox Width="100" Text="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}"></TextBox>
+                    <TextBox x:Name="endVisit" Width="100" Text="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}"></TextBox>
                 </WrapPanel>
 
                 <WrapPanel>
-                    <Button>DUREE SORTIE</Button>
-                    <TextBlock Width="40"></TextBlock>
+                    <Button x:Name="calculeSemaine">DUREE SORTIE</Button>
+                    <TextBlock x:Name="affSemaines" Width="40"></TextBlock>
                     <Label Content="durée en semaine" Foreground="White"/>
                 </WrapPanel>
 
@@ -68,19 +68,19 @@
 
                 <WrapPanel Orientation="Horizontal">
                     <Label Foreground="White">Prix à Payer :</Label>
-                    <TextBlock></TextBlock>
+                    <TextBlock x:Name="prix"></TextBlock>
                 </WrapPanel>
 
                 <WrapPanel Orientation="Horizontal">
                     <Label Foreground="White">Nombre de semaines :</Label>
-                    <TextBlock></TextBlock>
+                    <TextBlock x:Name="nbrSemaines"></TextBlock>
                 </WrapPanel>
 
             </StackPanel>
         </GroupBox>
 
         <WrapPanel Orientation="Vertical" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Content="CALCULER"></Button>
+            <Button x:Name="calculer" Content="CALCULER"></Button>
             <Button Content="INIT"></Button>
         </WrapPanel>
     </Grid>
